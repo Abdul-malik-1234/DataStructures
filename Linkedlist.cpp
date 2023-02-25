@@ -69,11 +69,11 @@ int main(){
     }
     print_all_nodes(h);
     cout<<"\n";
-    cout<<"Reversing the above linked list and now new head becomes 6:"<<endl;
+    cout<<"Reversing the above linked-list and now new head becomes 6:"<<endl;
     Node* head=reversell(h);
     print_all_nodes(head);
     cout<<"\n";
-    cout<<"Reversing the above linked list recursively and now new head becomes 1:"<<endl;
+    cout<<"Reversing the above linked-list recursively and now new head becomes 1:"<<endl;
     head=reverse(head);
     print_all_nodes(head);
     return 0;
