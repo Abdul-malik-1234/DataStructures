@@ -42,7 +42,7 @@ Node* reversell(Node* head){
         curr=temp;
     }
     return prev;
-}  
+}       
 //recursive-way
 Node* reverse(Node* head){
     if(head==NULL or head->next==NULL) return head;
