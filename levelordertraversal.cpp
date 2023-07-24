@@ -34,6 +34,7 @@ void distbyk(Node* root,int k){
 //     }
 // }
 void levelordertraversal(Node* root){
+    //time complexity-O(n)
     queue<Node*> q;
     if(root==NULL) return;
     q.push(root);
