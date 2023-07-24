@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "\"emmet.includeLanguages\"": " {\"django-html\": \"html\"},",
+        "iostream": "cpp"
+    }
+}

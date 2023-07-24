@@ -11,20 +11,32 @@ class Node{
         this->right=NULL;
     }
 };
-void preorder_traversal_of_tree(Node* root){
+void preorder_traversal(Node* root){
     if(root==NULL) return;
     cout<<root->data<<" ";
-    print_tree(root->left);
-    print_tree(root->right);
+    preorder_traversal(root->left);
+    preorder_traversal(root->right);
 }
-void inorder_traversal_of_tree(Node* root){
+void inorder_traversal(Node* root){
     if(root==NULL) return;
-    print_tree(root->left);
-    cout<<"root->data"<<" ";
-    print_tree(root->right);
+    inorder_traversal(root->left);
+    cout<<root->data<<" ";
+    inorder_traversal(root->right);
+}
+void postorder_traversal(Node* root){
+    if(root==NULL) return;
+    postorder_traversal(root->left);
+    postorder_traversal(root->right);
+    cout<<root->data<<" ";
 }
 int main(){
     Node* t=new Node(1);
-    print_tree(t);
+    t->left=new Node(2);
+    t->right=new Node(3);
+    inorder_traversal(t);
+    cout<<endl;
+    preorder_traversal(t);
+    cout<<endl;
+    postorder_traversal(t);
     return 0;
 }
